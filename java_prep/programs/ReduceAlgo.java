@@ -13,7 +13,7 @@ public class ReduceAlgo {
         char current=arr[0];
 
         StringBuffer sb=new StringBuffer();
-        for(int i=0;i<arr.length;i++){
+        for(int i=1;i<arr.length;i++){
 
             if(arr[i]==current){
 
@@ -28,6 +28,8 @@ public class ReduceAlgo {
             }
 
         }
+
+        sb.append(current).append(count);
 
         System.out.println(sb.toString());
 
