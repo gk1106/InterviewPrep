@@ -9,33 +9,33 @@ import java.util.stream.Collectors;
 public class Count {
     public static void main(String[] args) {
 
-       // List<String> names= Arrays.asList("ganesh","vimal","ajay","ganesh","vimal","ajay","ganesh","nirmal","sachin");
+        List<String> names= Arrays.asList("ganesh","vimal","ajay","ganesh","vimal","ajay","ganesh","nirmal","sachin");
+
+        Set<String> seen=new HashSet<>();
+
+
+        List<String> result=names.stream()
+                .filter(n->!seen.add(n))
+                .distinct()
+                .collect(Collectors.toList());
+//        StringBuilder Sb=new StringBuilder();
 //
-//        Set<String> seen=new HashSet<>();
 //
 //
-//        List<String> result=names.stream()
-//                .filter(n->!seen.add(n))
-//                .distinct()
-//                .collect(Collectors.toList());
-        StringBuilder Sb=new StringBuilder();
-
-
-
-
-        String word="wellcome to java world";
-
-        char[] res=word.toCharArray();
-
-
-
-        System.out.println(Arrays.toString(res));
+//
+//        String word="wellcome to java world";
+//
+//        char[] res=word.toCharArray();
+//
+//
+//
+//        System.out.println(Arrays.toString(res));
 
 
 
 
 
 
-//        System.out.println(result);
+      System.out.println(result);
     }
 }
