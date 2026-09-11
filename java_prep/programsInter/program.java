@@ -1,9 +1,6 @@
 package java_prep.programsInter;
 
-import java_prep.StreamApi.Employee;
-
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class program {
     public static void main(String[] args) {

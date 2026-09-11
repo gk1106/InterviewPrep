@@ -1,4 +1,4 @@
-package java_prep.StreamApi;
+package java_prep.GkPrepare;
 
 public class Employee {
     private String name;
