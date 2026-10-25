@@ -14,7 +14,7 @@ public class EmpProblem {
                 new Employee("Meena", "HR", 70000),
                 new Employee("Ravi", "IT", 80000)
         );
-
+//maxsalary departwise
 
 
 
