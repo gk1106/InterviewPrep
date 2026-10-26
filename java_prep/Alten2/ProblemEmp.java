@@ -1,8 +1,6 @@
 package java_prep.Alten2;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ProblemEmp {
@@ -43,6 +41,15 @@ public class ProblemEmp {
 
                 ));
 
+
+//        Map<String, Optional<Employee>> result =
+//                empList.stream()
+//                        .collect(Collectors.groupingBy(
+//                                Employee::getDepartment,
+//                                Collectors.maxBy(
+//                                        Comparator.comparingDouble(Employee::getSalary)
+//                                )
+//                        ));
 
         System.out.println(result);
 
