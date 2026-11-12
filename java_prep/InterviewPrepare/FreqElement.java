@@ -20,13 +20,13 @@ public class FreqElement {
                 ));
 
         Long res=result.values().stream()
-                        .max(Comparator.naturalOrder())
-                                .orElse(null);
+                .max(Comparator.naturalOrder())
+                .orElse(null);
 
-             List<Integer> finalres=result.entrySet().stream()
-                              .filter(n->n.getValue().equals(res))
-                                      .map(Map.Entry::getKey)
-                                              .toList();
+        List<Integer> finalres=result.entrySet().stream()
+                .filter(n->n.getValue().equals(res))
+                .map(Map.Entry::getKey)
+                .toList();
 
 
 
